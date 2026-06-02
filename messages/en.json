@@ -1,1 +1,64 @@
-{"nav":{"placeholder":"todo"}}
+{
+  "nav": {
+    "lang": "EN",
+    "langSwitch": "ES",
+    "menu": "Menu",
+    "themeLight": "Switch to light mode",
+    "themeDark": "Switch to dark mode"
+  },
+  "hero": {
+    "established": "EST. 2025",
+    "role": "Full Stack Developer\nSystems Architect",
+    "portfolio": "PORTFOLIO 2025"
+  },
+  "ticker": {
+    "items": [
+      "SOFTWARE ENGINEERING",
+      "SYSTEMS ARCHITECTURE",
+      "UI/UX IMPLEMENTATION",
+      "CARLOS BAENA",
+      "PORTFOLIO 2025"
+    ]
+  },
+  "manifesto": {
+    "quote1": "CODE IS",
+    "quote2": "ARCHITECTURE.",
+    "quote3": "EVERY FUNCTION IS A",
+    "quote4": "LOAD-BEARING",
+    "quote5": "COLUMN.",
+    "tag": "Development Philosophy",
+    "p1": "I build digital structures intended to last. My approach merges the precision of systems engineering with the aesthetic discipline of modern design. Every line of code serves a purpose, eliminating the superfluous to reveal the essential function underneath.",
+    "p2": "Inspired by Brutalist architecture, I believe in exposing the raw mechanics of an application—clean APIs, robust state management, and semantic markup that stands strong against the test of scale and time."
+  },
+  "stack": {
+    "title1": "TECHNICAL",
+    "title2": "STACK",
+    "frontend": "FRONTEND",
+    "backend": "BACKEND",
+    "mobile": "MOBILE",
+    "devops": "DEVOPS"
+  },
+  "projects": {
+    "title1": "PROJECT",
+    "title2": "INDEX",
+    "subtitle": "Selected engineering and architectural projects. Focused on robust systems and elegant UI.",
+    "viewProject": "→ View project",
+    "backToIndex": "← Project Index",
+    "techStack": "Tech Stack",
+    "whatItDoes": "What It Does",
+    "viewRepo": "View Repository",
+    "viewLive": "View Live"
+  },
+  "contact": {
+    "title": "LET'S BUILD",
+    "email": "hello@carlosbaena.dev"
+  },
+  "footer": {
+    "rights": "© 2025 CARLOS BAENA — ALL RIGHTS RESERVED",
+    "builtWith": "DESIGNED & BUILT WITH",
+    "email": "EMAIL",
+    "linkedin": "LINKEDIN",
+    "github": "GITHUB",
+    "instagram": "INSTAGRAM"
+  }
+}

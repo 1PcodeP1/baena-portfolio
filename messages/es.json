@@ -1,1 +1,64 @@
-{"nav":{"placeholder":"todo"}}
+{
+  "nav": {
+    "lang": "ES",
+    "langSwitch": "EN",
+    "menu": "Menú",
+    "themeLight": "Cambiar a modo claro",
+    "themeDark": "Cambiar a modo oscuro"
+  },
+  "hero": {
+    "established": "EST. 2025",
+    "role": "Desarrollador Full Stack\nArquitecto de Sistemas",
+    "portfolio": "PORTAFOLIO 2025"
+  },
+  "ticker": {
+    "items": [
+      "INGENIERÍA DE SOFTWARE",
+      "ARQUITECTURA DE SISTEMAS",
+      "IMPLEMENTACIÓN UI/UX",
+      "CARLOS BAENA",
+      "PORTAFOLIO 2025"
+    ]
+  },
+  "manifesto": {
+    "quote1": "EL CÓDIGO ES",
+    "quote2": "ARQUITECTURA.",
+    "quote3": "CADA FUNCIÓN ES UNA",
+    "quote4": "COLUMNA",
+    "quote5": "ESTRUCTURAL.",
+    "tag": "Filosofía de Desarrollo",
+    "p1": "Construyo estructuras digitales diseñadas para durar. Mi enfoque fusiona la precisión de la ingeniería de sistemas con la disciplina estética del diseño moderno. Cada línea de código tiene un propósito, eliminando lo superfluo para revelar la función esencial.",
+    "p2": "Inspirado en la arquitectura Brutalista, creo en exponer la mecánica cruda de una aplicación: APIs limpias, gestión de estado robusta y marcado semántico que resiste la prueba de la escala y el tiempo."
+  },
+  "stack": {
+    "title1": "STACK",
+    "title2": "TÉCNICO",
+    "frontend": "FRONTEND",
+    "backend": "BACKEND",
+    "mobile": "MÓVIL",
+    "devops": "DEVOPS"
+  },
+  "projects": {
+    "title1": "ÍNDICE DE",
+    "title2": "PROYECTOS",
+    "subtitle": "Proyectos de ingeniería y arquitectura seleccionados. Enfocados en sistemas robustos y UI elegante.",
+    "viewProject": "→ Ver proyecto",
+    "backToIndex": "← Índice de proyectos",
+    "techStack": "Stack Tecnológico",
+    "whatItDoes": "Qué Hace",
+    "viewRepo": "Ver Repositorio",
+    "viewLive": "Ver en Vivo"
+  },
+  "contact": {
+    "title": "CONSTRUYAMOS",
+    "email": "hello@carlosbaena.dev"
+  },
+  "footer": {
+    "rights": "© 2025 CARLOS BAENA — TODOS LOS DERECHOS RESERVADOS",
+    "builtWith": "DISEÑADO Y CONSTRUIDO CON",
+    "email": "EMAIL",
+    "linkedin": "LINKEDIN",
+    "github": "GITHUB",
+    "instagram": "INSTAGRAM"
+  }
+}
