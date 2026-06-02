@@ -72,6 +72,8 @@ export function ProjectIndex() {
               <button
                 className="w-full flex items-center justify-between py-5 text-left"
                 onClick={() => setMobileOpen(isOpen ? null : i)}
+                aria-expanded={isOpen}
+                aria-label={`${isOpen ? 'Collapse' : 'Expand'} ${content.title}`}
               >
                 <div className="flex items-center gap-4">
                   <span className="font-mono text-[11px] tracking-widest text-secondary">{project.number}</span>
