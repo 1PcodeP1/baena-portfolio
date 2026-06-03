@@ -15,7 +15,7 @@ export function Contact() {
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
         className="max-w-5xl mx-auto flex flex-col items-center"
       >
-        <h2 className="font-display text-[72px] md:text-[160px] leading-[0.8] tracking-tighter uppercase mb-12 w-full">
+        <h2 className="font-display text-[48px] sm:text-[64px] md:text-[160px] leading-[0.8] tracking-tighter uppercase mb-12 w-full">
           {t('title')}
         </h2>
         <a

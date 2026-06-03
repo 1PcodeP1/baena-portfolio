@@ -18,10 +18,10 @@ export function Manifesto() {
   return (
     <section
       ref={ref}
-      className="py-32 px-margin-mobile md:px-margin-desktop bg-on-background text-background border-b border-outline-variant relative overflow-hidden"
+      className="py-16 md:py-32 px-margin-mobile md:px-margin-desktop bg-on-background text-background border-b border-outline-variant relative overflow-x-hidden"
     >
       <motion.div style={{ y }} className="max-w-6xl mx-auto">
-        <h2 className="font-display text-[56px] md:text-[130px] leading-[0.85] tracking-tighter uppercase mb-16 text-background">
+        <h2 className="font-display text-[34px] sm:text-[48px] md:text-[130px] leading-[0.9] md:leading-[0.85] tracking-tighter uppercase mb-10 md:mb-16 text-background">
           {t('quote1')} <span className="text-primary">{t('quote2')}</span>
           <br />
           {t('quote3')}
