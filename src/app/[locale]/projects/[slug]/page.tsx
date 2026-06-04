@@ -51,18 +51,26 @@ export default async function ProjectPage({
                 </h1>
               </div>
               <div className="flex gap-4 mt-4">
-                <a
-                  href={project.repoUrl}
-                  className="font-mono text-[11px] tracking-widest uppercase border border-outline-variant px-5 py-2.5 text-on-background hover:border-primary hover:text-primary transition-colors"
-                >
-                  {t('viewRepo')}
-                </a>
-                <a
-                  href={project.liveUrl}
-                  className="font-mono text-[11px] tracking-widest uppercase border border-primary bg-primary text-on-primary px-5 py-2.5 hover:bg-transparent hover:text-primary transition-colors"
-                >
-                  {t('viewLive')}
-                </a>
+                {project.repoUrl !== '#' && (
+                  <a
+                    href={project.repoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-[11px] tracking-widest uppercase border border-outline-variant px-5 py-2.5 text-on-background hover:border-primary hover:text-primary transition-colors"
+                  >
+                    {t('viewRepo')}
+                  </a>
+                )}
+                {project.liveUrl !== '#' && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-[11px] tracking-widest uppercase border border-primary bg-primary text-on-primary px-5 py-2.5 hover:bg-transparent hover:text-primary transition-colors"
+                  >
+                    {t('viewLive')}
+                  </a>
+                )}
               </div>
             </div>
           </div>

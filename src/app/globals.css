@@ -55,17 +55,6 @@ body {
   color: #ffffff;
 }
 
-/* Ticker animation */
-@keyframes ticker {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-.ticker-animate {
-  display: inline-flex;
-  animation: ticker 20s linear infinite;
-}
-
 /* Sparkle shape */
 .sparkle {
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);

@@ -13,10 +13,12 @@
   },
   "ticker": {
     "items": [
-      "INGENIERÍA DE SOFTWARE",
-      "ARQUITECTURA DE SISTEMAS",
-      "IMPLEMENTACIÓN UI/UX",
+      "DESARROLLO FULLSTACK",
+      "NEXT.JS · FLUTTER · NESTJS",
+      "INSTALACIONES INTERACTIVAS",
       "CARLOS BAENA",
+      "ARQUITECTURA DE SISTEMAS",
+      "MOBILE & WEB",
       "PORTAFOLIO 2025"
     ]
   },
@@ -44,6 +46,8 @@
     "subtitle": "Proyectos de ingeniería y arquitectura seleccionados. Enfocados en sistemas robustos y UI elegante.",
     "viewProject": "→ Ver proyecto",
     "backToIndex": "← Índice de proyectos",
+    "expand": "Expandir",
+    "collapse": "Colapsar",
     "techStack": "Stack Tecnológico",
     "whatItDoes": "Qué Hace",
     "viewRepo": "Ver Repositorio",

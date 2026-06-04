@@ -4,7 +4,6 @@ export interface Project {
   slug: string
   number: string
   year: number
-  featured: boolean
   tech: string[]
   liveUrl: string
   repoUrl: string
@@ -29,7 +28,6 @@ export const projects: Project[] = [
     slug: 'project-alpha',
     number: '01',
     year: 2025,
-    featured: true,
     tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Docker'],
     liveUrl: '#',
     repoUrl: '#',
@@ -64,7 +62,6 @@ export const projects: Project[] = [
     slug: 'project-beta',
     number: '02',
     year: 2024,
-    featured: false,
     tech: ['Flutter', 'Firebase', 'BLoC', 'Dart'],
     liveUrl: '#',
     repoUrl: '#',
@@ -99,7 +96,6 @@ export const projects: Project[] = [
     slug: 'project-gamma',
     number: '03',
     year: 2023,
-    featured: false,
     tech: ['React', 'Node.js', 'MongoDB', 'Tailwind'],
     liveUrl: '#',
     repoUrl: '#',
@@ -126,6 +122,74 @@ export const projects: Project[] = [
           'Widgets de gráficas configurables con layout drag-and-drop',
           'Arquitectura multi-tenant con aislamiento de workspaces',
           'Exportación CSV y PDF para todos los reportes',
+        ],
+      },
+    },
+  },
+  {
+    slug: 'obras-vivas',
+    number: '04',
+    year: 2025,
+    tech: ['Next.js', 'TypeScript', 'GSAP', 'Framer Motion', 'Tailwind CSS', 'tsParticles'],
+    liveUrl: '#',
+    repoUrl: '#',
+    translations: {
+      en: {
+        title: 'Obras Vivas',
+        shortDescription: 'Interactive art installation website — light, memory and eternity in Santa Fe de Antioquia.',
+        fullDescription:
+          'Digital showcase for an interdisciplinary art installation inspired by the heritage of Santa Fe de Antioquia, Colombia. Characters extracted from traditional paintings — carriers, incense-bearers, matrons and stewards — are brought to life through animation, spatial audio, and interactive presence.',
+        whatItDoes: [
+          'Hero with particle system (tsParticles) and letter-by-letter text reveal via Splitting.js + GSAP',
+          'Interactive sound map of Santa Fe de Antioquia: click a landmark to hear its character',
+          'Gallery of five living characters — each with an expandable card, modal and soundscape',
+          'Smooth scroll orchestrated with Lenis + GSAP ScrollTrigger across all sections',
+        ],
+      },
+      es: {
+        title: 'Obras Vivas',
+        shortDescription: 'Sitio web de instalación artística interactiva — luz, memoria y eternidad en Santa Fe de Antioquia.',
+        fullDescription:
+          'Vitrina digital de una instalación artística interdisciplinar inspirada en el patrimonio de Santa Fe de Antioquia, Colombia. Personajes extraídos de pinturas tradicionales — cargueros, sahumadoras, matronas y mayordomos — cobran vida a través de animación, audio espacial y presencia interactiva.',
+        whatItDoes: [
+          'Hero con sistema de partículas (tsParticles) y revelado de texto letra a letra con Splitting.js + GSAP',
+          'Mapa sonoro interactivo de Santa Fe de Antioquia: clic en un punto histórico para escuchar su personaje',
+          'Galería de cinco personajes vivos — cada uno con card expandible, modal y paisaje sonoro',
+          'Smooth scroll orquestado con Lenis + GSAP ScrollTrigger a lo largo de todas las secciones',
+        ],
+      },
+    },
+  },
+  {
+    slug: 'grand-stakes',
+    number: '05',
+    year: 2025,
+    tech: ['Flutter', 'Dart', 'Hive', 'Audioplayers'],
+    liveUrl: '#',
+    repoUrl: '#',
+    translations: {
+      en: {
+        title: 'Grand Stakes',
+        shortDescription: 'High-fidelity casino simulator built entirely in Flutter — zero real money, full luxury experience.',
+        fullDescription:
+          'Grand Stakes Pro Simulator recreates the atmosphere of a private high-roller atelier. Built with Flutter for Android, iOS, Web and macOS, it features premium dark-mode UI, realistic sound design, and fully local persistent state — no backend required.',
+        whatItDoes: [
+          'Four complete casino games: Blackjack (Split/Double/Surrender), Roulette, Slots with Minor/Major/Grand jackpots, and Baccarat',
+          'Local auth with Hive: multi-session profiles with isolated balance, history and settings',
+          'Reactive state engine via ValueListenableBuilder — balance and stats update in real time',
+          'Continuous Jazz soundtrack + contextual SFX (card dealing, jackpots, wheel spin) via Audioplayers',
+        ],
+      },
+      es: {
+        title: 'Grand Stakes',
+        shortDescription: 'Simulador de casino de alta fidelidad construido en Flutter — sin dinero real, experiencia de lujo completa.',
+        fullDescription:
+          'Grand Stakes Pro Simulator recrea la atmósfera de un atelier privado de high-roller. Construido con Flutter para Android, iOS, Web y macOS, ofrece UI premium en modo oscuro, diseño de sonido realista y estado persistente completamente local — sin backend.',
+        whatItDoes: [
+          'Cuatro juegos de casino completos: Blackjack (Split/Double/Surrender), Ruleta, Slots con jackpots Minor/Major/Grand y Baccarat',
+          'Autenticación local con Hive: perfiles multi-sesión con saldo, historial y ajustes aislados',
+          'Motor de estado reactivo con ValueListenableBuilder — saldo y estadísticas se actualizan en tiempo real',
+          'Banda sonora Jazz continua + SFX contextuales (reparto de cartas, jackpots, giro de ruleta) vía Audioplayers',
         ],
       },
     },
