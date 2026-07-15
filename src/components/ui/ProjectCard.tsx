@@ -14,6 +14,7 @@ export function ProjectCard({ project, locale, isActive, onHover, onClick }: Pro
 
   return (
     <div
+      data-stagger-item
       className={`
         group flex items-center justify-between py-6 px-4 border-b border-outline-variant cursor-pointer
         transition-colors duration-150 hover:bg-surface-variant

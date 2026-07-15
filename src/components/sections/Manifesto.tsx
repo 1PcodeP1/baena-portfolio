@@ -1,33 +1,24 @@
 'use client'
 
-import { useRef } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
 import { useTranslations } from 'next-intl'
+import { WordReveal } from '@/components/scroll/WordReveal'
 
 export function Manifesto() {
   const t = useTranslations('manifesto')
-  const ref = useRef<HTMLElement>(null)
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ['start end', 'end start'],
-  })
-
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '-18%'])
 
   return (
-    <section
-      ref={ref}
-      className="py-16 md:py-32 px-margin-mobile md:px-margin-desktop bg-on-background text-background border-b border-outline-variant relative overflow-x-hidden"
-    >
-      <motion.div style={{ y }} className="max-w-6xl mx-auto">
-        <h2 className="font-display text-[34px] sm:text-[48px] md:text-[130px] leading-[0.9] md:leading-[0.85] tracking-tighter uppercase mb-10 md:mb-16 text-background">
-          {t('quote1')} <span className="text-primary">{t('quote2')}</span>
-          <br />
-          {t('quote3')}
-          <br />
-          <span className="italic text-primary">{t('quote4')}</span> {t('quote5')}
-        </h2>
+    <section className="py-16 md:py-32 px-margin-mobile md:px-margin-desktop bg-on-background text-background border-b border-outline-variant relative overflow-x-hidden">
+      <div className="max-w-6xl mx-auto">
+        <WordReveal
+          className="font-display text-[34px] sm:text-[48px] md:text-[130px] leading-[0.9] md:leading-[0.85] tracking-tighter uppercase mb-10 md:mb-16 text-background"
+          segments={[
+            { text: t('quote1') },
+            { text: t('quote2'), className: 'text-primary', breakAfter: true },
+            { text: t('quote3'), breakAfter: true },
+            { text: t('quote4'), className: 'italic text-primary' },
+            { text: t('quote5') },
+          ]}
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 border-t border-[rgba(247,244,237,0.15)] pt-12">
           <div className="md:col-span-4">
@@ -39,7 +30,7 @@ export function Manifesto() {
             <p className="font-sans text-base text-background/80 font-light leading-relaxed">{t('p2')}</p>
           </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   )
 }

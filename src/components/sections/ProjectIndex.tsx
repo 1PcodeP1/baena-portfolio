@@ -8,6 +8,7 @@ import { useTranslations, useLocale } from 'next-intl'
 import { projects } from '@/data/projects'
 import { ProjectCard } from '@/components/ui/ProjectCard'
 import { ProjectPreview } from '@/components/ui/ProjectPreview'
+import { ScrollStagger } from '@/components/scroll/ScrollStagger'
 
 export function ProjectIndex() {
   const t = useTranslations('projects')
@@ -38,7 +39,7 @@ export function ProjectIndex() {
       </motion.div>
 
       {/* Desktop: split panel */}
-      <div className="hidden md:grid md:grid-cols-2 border border-outline-variant min-h-[520px]">
+      <ScrollStagger className="hidden md:grid md:grid-cols-2 border border-outline-variant min-h-[520px]">
         <div className="border-r border-outline-variant flex flex-col justify-center">
           {projects.map((project, i) => (
             <ProjectCard
@@ -60,15 +61,15 @@ export function ProjectIndex() {
             />
           </AnimatePresence>
         </div>
-      </div>
+      </ScrollStagger>
 
       {/* Mobile: accordion */}
-      <div className="md:hidden flex flex-col border-t border-outline-variant">
+      <ScrollStagger className="md:hidden flex flex-col border-t border-outline-variant">
         {projects.map((project, i) => {
           const content = project.translations[locale as 'en' | 'es']
           const isOpen = mobileOpen === i
           return (
-            <div key={project.slug} className="border-b border-outline-variant">
+            <div key={project.slug} data-stagger-item className="border-b border-outline-variant">
               <button
                 className="w-full flex items-center justify-between py-5 text-left"
                 onClick={() => setMobileOpen(isOpen ? null : i)}
@@ -119,7 +120,7 @@ export function ProjectIndex() {
             </div>
           )
         })}
-      </div>
+      </ScrollStagger>
     </section>
   )
 }

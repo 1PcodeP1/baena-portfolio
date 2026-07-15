@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
+import { ParallaxExit } from '@/components/scroll/ParallaxExit'
 
 const wordVariants = {
   hidden: { opacity: 0, y: 48 },
@@ -27,6 +28,7 @@ export function Hero() {
         <span className="font-mono text-[11px] tracking-widest text-secondary">{t('established')}</span>
       </div>
 
+      <ParallaxExit>
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -58,6 +60,7 @@ export function Hero() {
           </div>
         </motion.div>
       </motion.div>
+      </ParallaxExit>
 
       <div className="absolute bottom-8 right-[1.5rem] md:right-[3rem] flex gap-3 text-primary">
         <div className="w-11 h-11 border-2 border-primary rounded-full flex items-center justify-center font-display text-xl hover:bg-primary hover:text-on-primary transition-colors cursor-default">

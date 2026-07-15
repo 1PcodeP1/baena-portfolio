@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
 import { PageTransition } from '@/components/ui/PageTransition'
+import { SmoothScroll } from '@/components/scroll/SmoothScroll'
 
 export const metadata: Metadata = {
   title: 'Carlos Baena | Portfolio',
@@ -24,7 +25,9 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <PageTransition>{children}</PageTransition>
+      <SmoothScroll>
+        <PageTransition>{children}</PageTransition>
+      </SmoothScroll>
     </NextIntlClientProvider>
   )
 }
